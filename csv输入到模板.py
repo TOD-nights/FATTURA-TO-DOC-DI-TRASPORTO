@@ -6,16 +6,15 @@ import re
 from datetime import datetime, timedelta
 
 
-pdf_path = "da_1736505411071..pdf"
-csv_file_path = r"E:\studio\info\Python\progetti\模板\da_1736505411071.csv"
+pdf_path = "Fattura 84 del 15-04-2025  PLAMI COMMERCIALE S R L.pdf"
+csv_file_path = r"C:\Users\haoxuan xu\Desktop\studio\Pythondoc\progetti\FATTURA-TO-DOC-DI-TRASPORTO\84.csv"
 # custom_num = input("请输入发票编号 (num): ")
 # custom_date = input("请输入日期 (date，格式如 DD/MM/YYYY): ")
-#custom_pag = input("请输入页码 (pag): ")
+#custom_pag = input("请输入页码 (pag): ")python csv输入到模板.py
 
-right_company_info = """PLENA SRL
- VIA COMO 10
- 20063  CERNUSCO SUL NAVIGLIO  (MI)
-  C.F./P.Iva 11427570962
+right_company_info = """PLAMI COMMERCIALE S.R.L.
+S.P. CASARANO-PARABITA-GALLIPOLI,LE VELE
+73046 MATINO (LE)
     """
 
 # 定义一个函数，从PDF中提取日期和发票编号
@@ -145,9 +144,10 @@ def add_company_info(page):
     #C.F./P.Iva 13255720966
     #"""
 
-    left_company_info = """CERI S.R.L.S.
-    VIA BREMBO 11 - 20139 MILANO(MI) - ITALY
-    C.F. / P.Iva 13774080967
+    left_company_info = """BIG WORLD SRL
+VIA GENTILE BELLINI, 10 - 20146 MILANO (MI)
+C.F./P.Iva 13567160968
+IBAN: IT49E0103011207000011368494
     """
 
 
